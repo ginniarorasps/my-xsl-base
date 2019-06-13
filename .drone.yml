@@ -1,0 +1,14 @@
+clone:
+  git:
+    image: plugins/git:next
+
+pipeline:
+  #==================================================
+  #============ Event: push ===========
+  #==================================================
+  # Create semantic version release
+  tag:
+    image: spscommerce/plugin-semantic-release
+    when:
+      event: push
+      branch: master

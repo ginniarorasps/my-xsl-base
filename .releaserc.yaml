@@ -1,0 +1,9 @@
+debug: true
+tagFormat: ${version}
+verifyConditions: "@semantic-release/github"
+analyzeCommits: "@semantic-release/commit-analyzer"
+generateNotes: "@semantic-release/release-notes-generator"
+prepare: false
+publish: "@semantic-release/github"
+success: false
+fail: false
