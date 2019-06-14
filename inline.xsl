@@ -1,0 +1,27 @@
+<!-- inlines.xsl -->
+
+
+
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+
+     version="1.0">
+
+
+
+  <xsl:template match="emphasis">
+
+   <b><xsl:apply-templates/></b>
+
+  </xsl:template>
+
+
+
+  <xsl:template match="literal">
+
+   <tt><xsl:apply-templates/></tt>
+
+  </xsl:template>
+
+
+
+</xsl:stylesheet>
